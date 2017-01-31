@@ -1,0 +1,8 @@
+Story: Cliente faz saque de dinheiro
+
+Scenario: Cliente com saldo negativo
+Given um cliente com saldo atual de -300 reais
+When solicitar um saque de 200 reais
+Then não deve efetuar o saque e retornar a mensagem Saldo Insuficiente
+
+
